@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Blog</title>
+    <link rel="stylesheet" href="{% static 'mi_app/css/estilos.css' %}">
+</head>
+<body>
+    <h1>Bienvenido a Mi Blog</h1>
+    <ul>
+        {% for post in posts %}
+            <li>{{ post.titulo }} - {{ post.fecha_publicacion }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
